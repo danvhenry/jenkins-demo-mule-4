@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<mule xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns:http="http://www.mulesoft.org/schema/mule/http"
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:http="http://www.mulesoft.org/schema/mule/http"
 	xmlns="http://www.mulesoft.org/schema/mule/core"
 	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
-http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd">
-	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="510bfacd-395b-4eb8-a042-d0907580d732" >
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="16ece51d-ed5b-4754-abb1-9cbab14ab8e9" >
 		<http:listener-connection host="0.0.0.0" port="8081" />
 	</http:listener-config>
-	<flow name="jenkins-demo-mule4Flow" doc:id="243fe22e-c4cd-478f-9243-262cc807ad58" >
-		<http:listener doc:name="Listener" doc:id="c9f5e6c6-19f9-4cbd-97df-61832ba36881" config-ref="HTTP_Listener_config" path="/providers"/>
-		<set-payload value="Hello World!" doc:name="Set Payload" doc:id="0bc72abe-0c48-4fa1-a51f-2d011f0d3c84" />
+	<http:request-config name="HTTP_Request_configuration" doc:name="HTTP Request configuration" doc:id="92415055-c61e-430e-b868-7b20721f1663" >
+		<http:request-connection host="loadimpact.uk-e1.cloudhub.io" />
+	</http:request-config>
+	<flow name="jenkins-demo-mule4Flow" doc:id="a242b18d-51b1-41ab-9f1d-6ee205bd7306" >
+		<http:listener doc:name="Listener" doc:id="409ee0cb-8d70-4f60-b4d5-28162ee41dba" config-ref="HTTP_Listener_config" path="/helloworld"/>
+		<set-payload value="Hello World!" doc:name="Set Payload" doc:id="601f87dd-0bb7-4226-bfbd-7948fdc3ec71" />
 	</flow>
 </mule>
