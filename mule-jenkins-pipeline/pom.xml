@@ -16,7 +16,7 @@
 
 
 		<app.runtime>4.1.1</app.runtime>
-		<mule.maven.plugin.version>3.6.2</mule.maven.plugin.version>
+		<mule.maven.plugin.version>3.3.2</mule.maven.plugin.version>
 	</properties>
 
 	<build>
@@ -63,6 +63,7 @@
 	</dependencies>
 
 	<repositories>
+	
 		<repository>
 			<id>anypoint-exchange</id>
 			<name>Anypoint Exchange</name>
@@ -86,6 +87,10 @@
 				<enabled>false</enabled>
 			</snapshots>
 		</pluginRepository>
+		  <pluginRepository>
+    <id>mule-public</id>
+    <url>https://repository.mulesoft.org/nexus/content/repositories/releases</url>
+  </pluginRepository>
 	</pluginRepositories>
 
 </project>
