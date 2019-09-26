@@ -3,10 +3,9 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.mycompany</groupId>
-	<artifactId>mule-jenkins-pipeline-wsrd</artifactId>
+	<artifactId>mule-jenkins-pipeline</artifactId>
 	<version>1.0.0</version>
 	<packaging>mule-application</packaging>
-
 
 	<name>mule-jenkins-pipeline</name>
 
@@ -14,19 +13,12 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-
 		<app.runtime>4.1.1</app.runtime>
-		<mule.maven.plugin.version>3.2.7</mule.maven.plugin.version>
+		<mule.maven.plugin.version>3.1.1</mule.maven.plugin.version>
 	</properties>
 
 	<build>
 		<plugins>
-			<plugin>
-				<groupId>org.mule.tools.maven</groupId>
-				<artifactId>mule-app-maven-plugin</artifactId>
-				<version>1.1</version>
-				<extensions>true</extensions>
-			</plugin>
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
@@ -41,8 +33,7 @@
 						<applicationName>${project.artifactId}</applicationName>
 						<environment>${environment}</environment>
 					</cloudHubDeployment>
-				<classifier>mule-application</classifier>
-                </configuration>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
