@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.mycompany</groupId>
-	<artifactId>mule-jenkins-pipeline</artifactId>
+	<artifactId>mule-jenkins-pipeline-wsre</artifactId>
 	<version>1.0.0</version>
 	<packaging>mule-application</packaging>
 
