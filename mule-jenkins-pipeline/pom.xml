@@ -40,7 +40,7 @@
 						<applicationName>${project.artifactId}-wrse</applicationName>
 						<environment>${environment}</environment>
                         <businessGroup>${businessgroup}</businessGroup>
-                        <region>us-west-2</region>
+                        <region>eu-west-2</region>
                         <workerType>${cloudhubworkerType}</workerType>
                         <workers>${cloudhubWorkers}</workers>
 					</cloudHubDeployment>
