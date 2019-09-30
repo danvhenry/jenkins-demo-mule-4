@@ -37,12 +37,12 @@
 						<muleVersion>${app.runtime}</muleVersion>
 						<username>${username}</username>
 						<password>${password}</password>
-						<applicationName>${project.artifactId}</applicationName>
+						<applicationName>${project.artifactId}-wrse</applicationName>
 						<environment>${environment}</environment>
-						<businessGroup>${businessgroup}</businessGroup>
-						<region>${region}</region>
-						<workerType>${cloudhubworkerType}</workerType>
-						<workers>${cloudhubworkers}</workers>
+                        <businessGroup>MuleSoft-DanHenryMuley</businessGroup>
+                        <region>us-west-2</region>
+                        <workerType>${cloudhubworkerType}</workerType>
+                        <workers>${cloudhubWorkers}</workers>
 					</cloudHubDeployment>
 					<classifier>mule-application</classifier>
 				</configuration>
