@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.mycompany</groupId>
-	<artifactId>mule-jenkins-pipeline-wrse</artifactId>
+	<artifactId>mule-jenkins-pipeline</artifactId>
 	<version>1.0.0</version>
 	<packaging>mule-application</packaging>
 
@@ -37,7 +37,7 @@
 						<muleVersion>${app.runtime}</muleVersion>
 						<username>${username}</username>
 						<password>${password}</password>
-						<applicationName>${project.artifactId}</applicationName>
+						<applicationName>${project.artifactId}-wrse</applicationName>
 						<environment>${environment}</environment>
                         <businessGroup>MuleSoft-DanHenryMuley</businessGroup>
                         <region>us-west-2</region>
