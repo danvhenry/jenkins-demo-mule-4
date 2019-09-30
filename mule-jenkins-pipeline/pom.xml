@@ -39,7 +39,7 @@
 						<password>${password}</password>
 						<applicationName>${project.artifactId}-wrse</applicationName>
 						<environment>${environment}</environment>
-                        <businessGroup>MuleSoft-DanHenryMuley</businessGroup>
+                        <businessGroup>${businessgroup}</businessGroup>
                         <region>us-west-2</region>
                         <workerType>${cloudhubworkerType}</workerType>
                         <workers>${cloudhubWorkers}</workers>
