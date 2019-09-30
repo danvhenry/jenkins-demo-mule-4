@@ -33,10 +33,10 @@
 						<password>${password}</password>
 						<applicationName>${project.artifactId}-qwed</applicationName>
 						<environment>${environment}</environment>
-                        <businessGroup>${businessgroup}</businessGroup>
-                        <region>${region}</region>
-                        <workerType>${cloudhubworkerType}</workerType>
-                        <workers>${cloudhubWorkers}</workers>
+						<businessGroup>${businessgroup}</businessGroup>
+						<region>${region}</region>
+						<workerType>${cloudhubworkerType}</workerType>
+						<workers>${cloudhubWorkers}</workers>
 					</cloudHubDeployment>
 					<classifier>mule-application</classifier>
 				</configuration>
@@ -82,6 +82,10 @@
 			<snapshots>
 				<enabled>false</enabled>
 			</snapshots>
+		</pluginRepository>
+		<pluginRepository>
+			<id>mule-public</id>
+			<url>https://repository.mulesoft.org/nexus/content/repositories/releases</url>
 		</pluginRepository>
 	</pluginRepositories>
 
